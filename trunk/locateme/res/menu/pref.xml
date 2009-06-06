@@ -1,0 +1,9 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+	<item android:id="@+id/pref_menu_ok" android:title="@android:string/ok"
+		android:icon="@android:drawable/ic_menu_save" />
+
+	<item android:id="@+id/pref_menu_help" android:title="@string/action_choice_menu_help"
+		android:icon="@android:drawable/ic_menu_help" />
+</menu>

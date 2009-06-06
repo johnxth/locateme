@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	package="fr.migo.locateme.android" android:versionCode="2"
+	android:versionName="1.1">
+	<application android:label="@string/app_name" android:icon="@drawable/icon">
+		<receiver android:name=".LocateMe">
+			<intent-filter>
+				<action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+				<action android:name="android.appwidget.action.APPWIDGET_ENABLE" />
+				<action android:name="android.appwidget.action.APPWIDGET_DISABLE" />
+			</intent-filter>
+			<meta-data android:name="android.appwidget.provider"
+				android:resource="@xml/appwidget_info" />
+		</receiver>
+		<service android:name=".LocateMe$LocateMeService" />
+        <activity android:name=".LocateMePreferences">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE" />
+            </intent-filter>
+        </activity>
+
+		<activity android:name=".AddLocation" />
+		<activity android:name=".ActionChoice" />
+
+
+	</application>
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+	<uses-permission android:name="android.permission.READ_CONTACTS" />
+	<uses-permission android:name="android.permission.WRITE_CONTACTS" />
+
+	<uses-sdk android:minSdkVersion="3" />
+</manifest> 

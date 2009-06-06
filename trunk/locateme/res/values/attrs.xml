@@ -1,0 +1,10 @@
+<resources>
+    <!-- These are the attributes that we want to retrieve from the theme
+         in app/PreferencesFromCode.java -->
+    <declare-styleable name="SeekBarPreference">
+    	<attr name="progress" format="integer"/>
+        <attr name="max" format="integer"/>
+        <attr name="delta" format="integer"/>
+    </declare-styleable>
+
+</resources>

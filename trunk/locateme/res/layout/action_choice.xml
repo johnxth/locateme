@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/edit_contact_address_root"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:orientation="vertical" xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:orientation="vertical"
+		android:background="@android:color/darker_gray" android:layout_marginBottom="10dp">
+
+		<TextView android:text="@string/current_address"
+			android:gravity="center_horizontal" android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:textColor="@android:color/black"
+			android:layout_marginTop="5dp" />
+
+		<ImageView android:src="@drawable/line_h"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_gravity="center_horizontal" android:layout_marginTop="5dp"
+			android:layout_marginBottom="5dp" />
+
+		<TextView android:id="@+id/address_action_choice"
+			android:text="@string/loading" android:gravity="center_horizontal"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:textColor="@android:color/black" />
+			
+		<ImageView android:src="@drawable/line_h"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_gravity="center_horizontal" android:layout_marginTop="5dp"
+			android:layout_marginBottom="5dp" />
+
+		<TextView android:id="@+id/extra_info_action_choice"
+			android:text="@string/loading" android:gravity="center_horizontal"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:textColor="@android:color/black" android:layout_marginBottom="5dp" />
+
+	</LinearLayout>
+
+	<ScrollView android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:gravity="center_vertical">
+
+		<LinearLayout android:layout_width="fill_parent"
+			android:layout_height="fill_parent" android:orientation="vertical">
+
+			<Button android:id="@+id/maps_action" android:text="@string/maps_action"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:enabled="false"  />
+
+			<Button android:id="@+id/contact_address_action" android:text="@string/address_contact_action"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:enabled="false" />
+				
+
+			<Button android:id="@+id/direction_action" android:text="@string/direction_action"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:enabled="false" />
+
+
+			<Button android:id="@+id/refresh_action" android:text="@string/refresh_action"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:enabled="true" />
+
+
+			<Button android:id="@+id/share_action" android:text="@string/share_action"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:enabled="false" android:visibility="gone" />
+
+			<Button android:id="@+id/alert_action" android:text="@string/alert_action"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:enabled="false" android:visibility="gone" />
+
+
+
+		</LinearLayout>
+
+	</ScrollView>
+
+</LinearLayout>
