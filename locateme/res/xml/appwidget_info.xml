@@ -1,0 +1,5 @@
+<appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
+	android:minWidth="220dip" android:minHeight="72dip"
+	android:updatePeriodMillis="86400000" android:initialLayout="@layout/appwidget"
+	android:configure="fr.migo.locateme.android.LocateMePreferences">
+</appwidget-provider>

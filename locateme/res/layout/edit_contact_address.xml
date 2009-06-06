@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent">
+	
+	<LinearLayout android:id="@+id/edit_contact_address_root"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:orientation="vertical" android:padding="10dp"
+		xmlns:android="http://schemas.android.com/apk/res/android">
+	
+		<EditText android:id="@+id/address_edit_text" 
+			android:layout_height="wrap_content" android:layout_width="fill_parent"></EditText>
+	
+		<Spinner android:layout_height="wrap_content" android:id="@+id/address_type_spinner"
+			android:entries="@android:array/postalAddressTypes"
+			android:layout_width="fill_parent"></Spinner>
+
+		<EditText android:id="@+id/custom_address_type_edit_text"
+			android:layout_height="wrap_content" android:layout_width="fill_parent"
+			android:visibility="gone"></EditText>
+
+
+	</LinearLayout>
+
+</ScrollView>

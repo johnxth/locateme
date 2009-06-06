@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+	<string-array name="shortcut_entries">
+        <item>@string/pref_shortcut_value_disable</item>
+        <item>@string/pref_shortcut_value_force_update</item>
+    </string-array> 
+
+	<string-array name="shortcut_entry_values">
+	    <item>0</item>
+        <item>1</item>
+     </string-array>
+
+
+	<string-array name="add_to_entries">
+        <item>@string/contacts</item>
+        <item>@string/bookmarks</item>
+    </string-array> 
+
+ </resources>
