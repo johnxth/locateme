@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">LocateMe</string>
+	<string name="location_not_found">Position introuvable. Vérifier vos paramètres.</string>
+	<string name="position_not_found">Position introuvable. Vérifier vos paramètres.</string>
+	<string name="address_not_found">Adresse introuvable.\nlat : %s, lon : %s</string>
+	<string name="address_to_add">Ajouter l\'adresse suivante au contact %s.</string>
+	<string name="address_to_add_new_contact">Créer un nouveau contact avec l'adresse suivante.</string>
+    <string name="address_added">L\'adresse a été ajoutée au contact %s.</string>
+    <string name="new_address_custom_type">Label personnalisé.</string>
+    <string name="current_address">Ma position actuelle est</string>
+    
+    <string name="current_extra_info_in_meter">%s / %s / ~%sm\nlat : %s, lon : %s</string>
+    <string name="current_extra_info_in_mile">%s / %s / ~%smile(s)\nlat : %s, lon : %s</string>
+    
+    <string name="loading">Chargement...</string>
+    
+    <string name="maps_action">Afficher ma position dans Maps</string>
+    <string name="address_contact_action">Ajouter ma position à un contact</string>
+    <string name="direction_action">Débuter un itinéraire à partir de ma position</string>
+    <string name="share_action">Partager ma position</string>
+    <string name="refresh_action">Mettre à jour ma position</string>
+    <string name="alert_action">M\'alerter</string>
+    
+    <string name="do_refresh_action">Votre position se met à jour</string>
+    
+    <string name="action_choice_menu_preferences">Préférences</string>
+    <string name="action_choice_menu_help">Aide</string>
+    
+    <string name="address_contact_menu_new_contact">Nouveau contact</string>
+    
+    
+   <string name="pref_location_update">Préférences de rafraîchissement</string>
+    
+    <string name="pref_location_update_time_title">Délai de rafraîchissement</string>
+    <string name="pref_location_update_time_summary">Le délai influe sur la batterie</string>
+    <string name="pref_location_update_time_dialog_title">Délai de rafraîchissment (en minute)</string>
+    
+    <string name="pref_location_update_distance_title">Distance de rafraîchissement</string>
+    <string name="pref_location_update_distance_summary">Le délai influe sur la batterie</string>
+    <string name="pref_location_update_distance_dialog_title">rafraîchissement (en mètre)</string>
+    
+    <string name="pref_display_and_shortcut">Préférences d'affichage</string>
+    
+    <string name="pref_display_more_info_title">Affichage des infos supplémentaires</string>
+    <string name="pref_display_more_info_summary_on">La précision est affiché sur le widget</string>
+     <string name="pref_display_more_info_summary_off">La précision n'est pas affiché sur le widget</string>
+     
+     <string name="pref_display_measure_units_title">Unité de mesure utilisée</string>
+     <string name="pref_display_measure_units_summary_on">Le mètre</string>
+     <string name="pref_display_measure_units_summary_off">Le miles</string>
+   
+    <string name="pref_display_date_format_title">Format de date</string>
+     <string name="pref_display_date_format_summary_on">dd/MM/yyyy HH:mm:ss</string>
+     <string name="pref_display_date_format_summary_off">MM/dd/yyyy HH:mm:ss AM|PM</string>
+     
+     <string name="pref_shortcut_title">Widget racourci</string>
+     <string name="pref_shortcut_summary">Activer le racourci lorsque l\'adresse est cliquée </string>
+     <string name="pref_shortcut_value_add_address_contact">Ajouter l\'adresse à un contact</string>
+     <string name="pref_shortcut_value_force_update">Mettre à jour ma position</string>
+     <string name="pref_shortcut_value_display_on_map">Afficher dans Maps</string>
+     <string name="pref_shortcut_value_display_as_direction">Itinéraire</string>
+     <string name="pref_shortcut_value_disable">Désactiver</string>
+     
+          <string name="pref_more">Autre...</string>
+     
+     <string name="pref_more_donate_title">Donation</string>
+     <string name="pref_more_donate_summary">Faites nous une donation</string>
+     
+     <string name="pref_more_credit_title">Développé par l\'équipe Migo</string>
+     <string name="pref_more_credit_summary">Visiter notre site Web</string>
+     
+     <string name="pref_more_icon_title">L\'auteur de l\'icône</string>
+     <string name="pref_more_icon_summary">IconDrawer - Eugen Buzuk</string>
+     
+          <string name="help_title">Aide</string>
+     <string name="help_url">file:///android_asset/help-fr.html</string>
+     
+      <string name="bookmarks_action">Add my location to bookmarks</string>
+     
+     <string name="add_location_to">Add my location to...</string>
+     
+     <string name="bookmarks">Bookmarks</string>
+     <string name="contacts">Contacts</string>
+     
+     <string name="action_choice_menu_bookmarks">Bookmarks</string>
+     
+    <string name="pref_location_update_gps_title">Utiliser le GPS</string>
+    <string name="pref_location_update_gps_summary_on">Utiliser le GPS si vos paramètres vous le permettent</string>
+    <string name="pref_location_update_gps_summary_off">Ne jamais utiliser le GPS</string>
+     
+      <string name="tips_help">Cliquer sur le bouton \"menu\" pour voir l''aide ou pour valider vos préférences !</string> 
+     
+</resources>

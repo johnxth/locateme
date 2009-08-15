@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:locateme="http://schemas.android.com/apk/res/fr.migo.locateme.android" >
+
+	<PreferenceCategory android:title="@string/pref_location_update" >
+
+		<fr.migo.locateme.android.preferences.SeekBarPreference
+			android:key="pref_location_update_time" android:title="@string/pref_location_update_time_title"
+			android:summary="@string/pref_location_update_time_summary"
+			android:dialogTitle="@string/pref_location_update_time_dialog_title"
+			locateme:progress="5" locateme:max="120" locateme:delta="1" />
+
+		<fr.migo.locateme.android.preferences.SeekBarPreference
+			android:key="pref_location_update_distance" android:title="@string/pref_location_update_distance_title"
+			android:summary="@string/pref_location_update_distance_summary"
+			android:dialogTitle="@string/pref_location_update_distance_dialog_title"
+			locateme:progress="1500" locateme:max="5000" locateme:delta="100" />
+
+		<CheckBoxPreference android:key="pref_location_update_gps"
+			android:title="@string/pref_location_update_gps_title"
+			android:summaryOn="@string/pref_location_update_gps_summary_on"
+			android:summaryOff="@string/pref_location_update_gps_summary_off"
+			android:defaultValue="true" />
+
+	</PreferenceCategory>
+
+	<PreferenceCategory android:title="@string/pref_display_and_shortcut">
+
+		<CheckBoxPreference android:key="pref_display_more_info"
+			android:title="@string/pref_display_more_info_title"
+			android:summaryOn="@string/pref_display_more_info_summary_on"
+			android:summaryOff="@string/pref_display_more_info_summary_off"
+			android:defaultValue="true" />
+
+		<CheckBoxPreference android:key="pref_display_measure_units"
+			android:title="@string/pref_display_measure_units_title"
+			android:summaryOn="@string/pref_display_measure_units_summary_on"
+			android:summaryOff="@string/pref_display_measure_units_summary_off"
+			android:defaultValue="true" />
+
+		<CheckBoxPreference android:key="pref_display_date_format_title"
+			android:title="@string/pref_display_date_format_title"
+			android:summaryOn="@string/pref_display_date_format_summary_on"
+			android:summaryOff="@string/pref_display_date_format_summary_off"
+			android:defaultValue="true" />
+		<!--
+			<ListPreference android:key="pref_shortcut"
+			android:title="@string/pref_shortcut_title"
+			android:summary="@string/pref_shortcut_summary"
+			android:entries="@array/shortcut_entries"
+			android:entryValues="@array/shortcut_entry_values"
+			android:defaultValue="0"
+			android:dialogTitle="@string/pref_shortcut_title"
+			android:dialogIcon="@android:drawable/ic_menu_help" />
+		-->
+	</PreferenceCategory>
+
+	<PreferenceCategory android:title="@string/pref_more">
+
+		<PreferenceScreen android:title="@string/pref_more_donate_title"
+			android:summary="@string/pref_more_donate_summary">
+			<intent android:action="android.intent.action.VIEW"
+				android:data="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=5763530" />
+		</PreferenceScreen>
+
+		<PreferenceScreen android:title="@string/pref_more_credit_title"
+			android:summary="@string/pref_more_credit_summary">
+			<intent android:action="android.intent.action.VIEW"
+				android:data="http://code.google.com/p/locateme/" />
+		</PreferenceScreen>
+
+		<PreferenceScreen android:title="@string/pref_more_icon_title"
+			android:summary="@string/pref_more_icon_summary">
+			<intent android:action="android.intent.action.VIEW"
+				android:data="http://www.icondrawer.com" />
+		</PreferenceScreen>
+	
+	</PreferenceCategory>
+
+</PreferenceScreen>

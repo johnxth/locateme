@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+	<!-- Layout utilisé pour le partage de la position -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:background="@android:color/white">
+
+	<ScrollView android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:layout_weight="1">
+
+		<LinearLayout android:orientation="vertical"
+			android:layout_width="fill_parent" android:layout_height="fill_parent" >
+
+			<!-- En tête (icône, titre) -->
+			<LinearLayout android:orientation="horizontal"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:background="@drawable/header_background">
+
+				<ImageView android:src="@drawable/icon"
+					android:layout_width="wrap_content" android:layout_height="fill_parent"
+					android:layout_margin="5dip" />
+
+				<TextView android:text="@string/save_location"
+					android:layout_width="wrap_content" android:layout_height="fill_parent"
+					android:layout_weight="1" style="@style/Text.BlackTitle1" />
+
+			</LinearLayout>
+
+			<!-- Section pour le service de localisation -->
+			<TextView android:text="@string/address_saved"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				style="@style/Text.BlackTitle2" />
+
+			<TextView android:text="@string/no_data_saved" android:id="@+id/address_saved_text"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				style="@style/Text.BlackDefault" />
+
+			<!-- Section pour le service de localisation -->
+			<TextView android:text="@string/infos_saved"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				style="@style/Text.BlackTitle2" />
+
+			<TextView android:text="@string/no_data_saved" android:id="@+id/infos_saved_text"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				style="@style/Text.BlackDefault" />
+
+			<TextView android:text="@string/notes_saved"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				style="@style/Text.BlackTitle2" />
+
+			<TextView android:text="@string/no_data_saved" android:id="@+id/notes_saved_text"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				style="@style/Text.BlackDefault" />
+
+			<ImageView android:src="@android:drawable/divider_horizontal_bright"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:layout_gravity="center_horizontal" android:layout_marginTop="5dip"
+				android:layout_marginBottom="5dip" />
+
+			<TextView android:text="@string/address_to_save"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				style="@style/Text.BlackTitle2" />
+
+			<TextView android:text="" android:id="@+id/address_to_save_text"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				style="@style/Text.BlackDefault" />
+
+			<TextView android:text="@string/infos_to_save"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				style="@style/Text.BlackTitle2" />
+
+			<TextView android:text="" android:id="@+id/infos_to_save_text"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				style="@style/Text.BlackDefault" />
+
+			<TextView android:text="@string/notes_to_save"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				style="@style/Text.BlackTitle2" />
+
+			<EditText android:hint="@string/write_notes_to_save"
+				android:id="@+id/notes_to_save_edittext" android:layout_width="fill_parent"
+				android:layout_height="wrap_content"  />
+
+		</LinearLayout>
+	</ScrollView>
+
+	<!-- Pied de page (boutons de sauvegarde) -->
+	<LinearLayout android:orientation="horizontal"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:background="@drawable/footer_background">
+
+		<ImageButton android:src="@drawable/ic_menu_mylocation"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"  />
+
+		<Button android:text="Save position" android:layout_width="fill_parent"
+			android:id="@+id/save_location" android:layout_height="wrap_content"
+			android:layout_weight="1" android:drawableLeft="@drawable/ic_menu_send" />
+
+	</LinearLayout>
+
+</LinearLayout>

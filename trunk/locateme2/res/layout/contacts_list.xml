@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:background="@android:color/white">
+
+
+	<LinearLayout android:orientation="horizontal"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:background="@drawable/header_background">
+
+		<ImageView android:src="@drawable/icon"
+			android:layout_width="wrap_content" android:layout_height="fill_parent"
+			android:layout_margin="5dip" />
+
+		<TextView android:text="@string/share_location"
+			android:layout_width="wrap_content" android:layout_height="fill_parent"
+			android:layout_weight="1" style="@style/Text.BlackTitle1" />
+
+	</LinearLayout>
+
+
+	<ListView android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:layout_weight="1"
+		android:id="@android:id/list" android:background="@android:color/white" android:divider="@android:drawable/divider_horizontal_bright"/>
+
+
+</LinearLayout>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">LocateMe</string>
+	
+	<string name="location_not_found">Location not found. Check you settings.</string>
+	<string name="position_not_found">Location not found. Check you settings.</string>
+	<string name="address_not_found">Address not found.\nlat : %s, lon : %s</string>
+	<string name="address_to_add">Add this address to a contact %s.</string>
+	<string name="address_to_add_new_contact">Create a new contact with this address.</string>
+    <string name="address_added">Address added to the contact %s.</string>
+    <string name="new_address_custom_type">Custom label name.</string>
+    <string name="current_address">My current location is</string>
+    
+    <string name="current_extra_info_in_meter">%s / %s / %s\nlat : %s, lon : %s</string>
+    <string name="current_extra_info_in_mile">%s / %s / %s\nlat : %s, lon : %s</string>
+    
+    <string name="loading">Loading...</string>
+    
+    <string name="maps_action">Display my location in Maps</string>
+    <string name="address_contact_action">Add my location to a contact</string>
+    <string name="direction_action">Begin a route from my position</string>
+    <string name="share_action">Share my location</string>
+    <string name="refresh_action">Refresh my location</string>
+    <string name="alert_action">Alert me</string>
+    
+    <string name="do_refresh_action">Your location is updating</string>
+    
+    <string name="action_choice_menu_preferences">Preferences</string>
+    <string name="action_choice_menu_help">Help</string>
+    
+    <string name="address_contact_menu_new_contact">New contact</string>
+    
+   <string name="pref_location_update">Update preferences</string>
+    
+    <string name="pref_location_update_time_title">Time</string>
+    <string name="pref_location_update_time_summary">The delay affects the battery</string>
+    <string name="pref_location_update_time_dialog_title">Refresh time (in minute)</string>
+    
+    <string name="pref_location_update_distance_title">Distance</string>
+    <string name="pref_location_update_distance_summary">The delay affects the battery</string>
+    <string name="pref_location_update_distance_dialog_title">refresh distance (in meters)</string>
+    
+    <string name="pref_display_and_shortcut">Display preferences</string>
+    
+    <string name="pref_display_more_info_title">Display widget additional info</string>
+    <string name="pref_display_more_info_summary_on">The accuracy is displayed</string>
+     <string name="pref_display_more_info_summary_off">The accuracy is not displayed</string>
+     
+     <string name="pref_display_measure_units_title">Measure unit used</string>
+     <string name="pref_display_measure_units_summary_on">Meter</string>
+     <string name="pref_display_measure_units_summary_off">Mile</string>
+   
+    <string name="pref_display_date_format_title">Date format</string>
+     <string name="pref_display_date_format_summary_on">dd/MM/yyyy HH:mm:ss</string>
+     <string name="pref_display_date_format_summary_off">MM/dd/yyyy HH:mm:ss AM|PM</string>
+     
+     <string name="pref_shortcut_title">Widget shorcut</string>
+     <string name="pref_shortcut_summary">Enable a shortcut when you tap on the widget address</string>
+     <string name="pref_shortcut_value_add_address_contact">Add address to a contact</string>
+     <string name="pref_shortcut_value_force_update">Refresh my location</string>
+     <string name="pref_shortcut_value_display_on_map">Display in Maps</string>
+     <string name="pref_shortcut_value_display_as_direction">Direction</string>
+     <string name="pref_shortcut_value_disable">Disable</string>
+     
+     <string name="pref_more">More...</string>
+     
+     <string name="pref_more_donate_title">Donate</string>
+     <string name="pref_more_donate_summary">Make us a donation</string>
+     
+     <string name="pref_more_credit_title">Developping by the team Migo</string>
+     <string name="pref_more_credit_summary">Visit our Web site</string>
+     
+     <string name="pref_more_icon_title">Icon author</string>
+     <string name="pref_more_icon_summary">IconDrawer - Eugen Buzuk</string>
+     
+     <string name="help_title">Help</string>
+     <string name="help_url">file:///android_asset/help.html</string>
+     
+     <string name="bookmarks_action">Add my location to bookmarks</string>
+     
+     <string name="add_location_to">Add my location to...</string>
+     
+     <string name="bookmarks">Bookmarks</string>
+     <string name="contacts">Contacts</string>
+     
+    <string name="action_choice_menu_bookmarks">Bookmarks</string>
+     
+	<string name="pref_location_update_gps_title">Use GPS</string>
+    <string name="pref_location_update_gps_summary_on">Use the GPS if enabled in your settings</string>
+    <string name="pref_location_update_gps_summary_off">Never use the GPS</string>
+    
+     <string name="tips_help">Click on \"menu\" button to see help or to accept your preferences !</string> 
+	
+	<string name="locateme_options"><i>LocateMe</i> options</string>
+	
+	<string name="share_location">Share this location</string>
+	<string name="share_provider">Location provider :</string>
+	<string name="share_address">Address :</string>
+	<string name="share_coordinates">Coordinates :</string>
+	<string name="share_maps_url">Google Maps URL :</string>
+	<string name="share_accurency">Accurency :</string>
+	<string name="share_not_found"><i>Not found. Check your settings.</i></string>
+	<string name="share_address_not_found"><i>Address not found.</i></string>
+	
+	<string name="save_location">Save location</string>
+	<string name="infos_saved">Infos saved :</string>
+	<string name="notes_saved">Notes saved :</string>
+	<string name="address_saved">Address saved :</string>
+	<string name="no_data_saved"><i>No data saved.</i></string>
+	<string name="address_to_save">Address to save :</string>
+	<string name="infos_to_save">Infos to save :</string>
+	<string name="notes_to_save">Notes to save :</string>
+	<string name="write_notes_to_save">Write your notes</string>
+	
+	<string name="goto_location_saved">Go to...</string>
+	<string name="maps_location_saved">Display on Maps</string>
+	<string name="notes_edition_location_saved">Edit notes</string>
+	<string name="erase_location_saved">Erase save</string>
+</resources>
