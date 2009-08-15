@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<resources>
+
+	<style name="LocateMeImageView">
+		<item name="android:layout_marginLeft">15dip</item>
+		<item name="android:background">@drawable/locateme</item>
+	</style>
+	
+	<style name="Text">
+	</style>
+
+	<style name="Text.WordTitle">
+		<item name="android:textSize">16sp</item>
+		<item name="android:textColor">@android:color/black</item>
+		<item name="android:layout_marginTop">13dip</item>
+		<item name="android:layout_marginRight">11dip</item>
+		<item name="android:layout_marginBottom">13dip</item>
+		<item name="android:gravity">center_vertical</item>
+	</style>
+
+	<style name="Text.BlackTitle2">
+		<item name="android:textSize">14sp</item>
+		<item name="android:textStyle">bold</item>
+		<item name="android:textColor">@android:color/black</item>
+		<item name="android:layout_marginLeft">5dip</item>
+	
+	</style>
+		<style name="Text.BlackTitle1">
+		<item name="android:textSize">24sp</item>
+		<item name="android:textStyle">bold</item>
+		<item name="android:textColor">@android:color/black</item>
+		<item name="android:gravity">center_vertical</item>
+	
+	</style>
+
+	<style name="Text.BlackDefault">
+		<item name="android:textSize">12sp</item>
+		<item name="android:textColor">@android:color/black</item>
+		<item name="android:layout_marginLeft">10dip</item>
+		<item name="android:gravity">left|center_vertical</item>
+	</style>
+	
+	<style name="Text.BlackSmall">
+		<item name="android:textSize">10sp</item>
+		<item name="android:textColor">@android:color/black</item>
+		<item name="android:gravity">center_horizontal</item>
+		<item name="android:textStyle">bold</item>
+	</style>
+
+	<style name="Text.BlackButton">
+		<item name="android:textSize">12sp</item>
+		<item name="android:textColor">@android:color/black</item>
+		<item name="android:gravity">left</item>
+	</style>
+
+		<style name="Text.BlackNormalWidget">
+		<item name="android:textSize">12sp</item>
+		<item name="android:textColor">@android:color/black</item>
+		<item name="android:gravity">left|top</item>
+		<item name="android:paddingLeft">30dip</item>
+		<item name="android:paddingRight">30dip</item>
+		<item name="android:paddingTop">15dip</item>
+		<item name="android:textStyle">bold</item>
+	</style>
+	
+		<style name="Text.BlackSmallWidget">
+		<item name="android:textSize">10sp</item>
+		<item name="android:textColor">@android:color/black</item>
+		<item name="android:gravity">left|bottom</item>
+		<item name="android:paddingLeft">30dip</item>
+		<item name="android:paddingRight">30dip</item>
+		<item name="android:paddingBottom">15dip</item>
+	</style>
+
+</resources>

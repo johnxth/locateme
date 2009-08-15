@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<item android:id="@+id/direction_action"
+		android:title="@string/goto_location_saved" android:icon="@android:drawable/ic_menu_directions" />
+
+	<item android:id="@+id/maps_action" android:title="@string/maps_location_saved"
+		android:icon="@android:drawable/ic_menu_myplaces" />
+		
+	<item android:id="@+id/erase_action" android:title="@string/erase_location_saved"
+		android:icon="@android:drawable/ic_menu_delete" />
+		
+	<item android:id="@+id/notes_edition_action" android:title="@string/notes_edition_location_saved"
+		android:icon="@android:drawable/ic_menu_edit" />	
+</menu>
+
