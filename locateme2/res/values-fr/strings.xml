@@ -10,8 +10,8 @@
     <string name="new_address_custom_type">Label personnalisé.</string>
     <string name="current_address">Ma position actuelle est</string>
     
-    <string name="current_extra_info_in_meter">%s / %s / ~%sm\nlat : %s, lon : %s</string>
-    <string name="current_extra_info_in_mile">%s / %s / ~%smile(s)\nlat : %s, lon : %s</string>
+    <string name="current_extra_info_in_meter">%s / %s / %s\nlat : %s, lon : %s</string>
+    <string name="current_extra_info_in_mile">%s / %s / %s\nlat : %s, lon : %s</string>
     
     <string name="loading">Chargement...</string>
     

@@ -1,7 +1,5 @@
 package fr.migo.locateme.android.actions;
 
-import java.util.Date;
-
 import android.app.Activity;
 import android.content.ComponentName;
 import android.content.Intent;
@@ -13,11 +11,12 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.ToggleButton;
+
+
 import fr.migo.locateme.android.ILocateMeService;
 import fr.migo.locateme.android.LocateMeService;
 import fr.migo.locateme.android.R;
 import fr.migo.locateme.android.preferences.PreferencesFormat;
-import fr.migo.locateme.android.tools.AddressBuilder;
 import fr.migo.locateme.android.tools.Utils;
 
 public class ShareLocation extends Activity {
@@ -36,13 +35,13 @@ public class ShareLocation extends Activity {
 	private TextView shareCoordinatesText;
 	private TextView shareMapsUrlText;
 	private TextView shareAccurencyText;
-	private TextView shareSystemText;
+	private TextView shareTimeText;
 
 	private ToggleButton shareAddressButton;
 	private ToggleButton shareCoordinatesButton;
 	private ToggleButton shareMapsUrlButton;
 	private ToggleButton shareAccurencyButton;
-	private ToggleButton shareSystemButton;
+	private ToggleButton shareTimeButton;
 
 	/**
 	 * {@link ServiceConnection} utilisé pour récupérer l'interface de communication {@link ILocateMeService}
@@ -86,14 +85,14 @@ public class ShareLocation extends Activity {
 		shareCoordinatesText=(TextView)findViewById(R.id.share_coordinates_text);
 		shareMapsUrlText=(TextView)findViewById(R.id.share_maps_url_text);
 		shareAccurencyText=(TextView)findViewById(R.id.share_accurency_text);
-		shareSystemText=(TextView)findViewById(R.id.share_system_text);
+		shareTimeText=(TextView)findViewById(R.id.share_time_text);
 
 		// Récupération de tout les toggle buttons
 		shareAddressButton=(ToggleButton)findViewById(R.id.share_address_toggle);
 		shareCoordinatesButton=(ToggleButton)findViewById(R.id.share_coordinates_toggle);
 		shareMapsUrlButton=(ToggleButton)findViewById(R.id.share_maps_url_toggle);
 		shareAccurencyButton=(ToggleButton)findViewById(R.id.share_accurency_toggle);
-		shareSystemButton=(ToggleButton)findViewById(R.id.share_system_toggle);
+		shareTimeButton=(ToggleButton)findViewById(R.id.share_time_toggle);
 
 		// Récupération du bouton d'envoi et paramétrage du listener
 		Button sendButton=(Button)findViewById(R.id.share_send);
@@ -135,7 +134,7 @@ public class ShareLocation extends Activity {
 			shareAddressText.setText(notFoundMessage);
 			shareMapsUrlText.setText(notFoundMessage);
 			shareCoordinatesText.setText(notFoundMessage);
-			shareSystemText.setText(notFoundMessage);
+			shareTimeText.setText(notFoundMessage);
 		}
 		// Si possible, la localisation et l'adresse courante sont récupérés auprès du service
 		else {
@@ -146,7 +145,7 @@ public class ShareLocation extends Activity {
 
 			shareAccurencyText.setText(mPrefsFormat.printAccuracy(accurency)+" ("+currentLocation.getProvider().toUpperCase()+")");
 			shareCoordinatesText.setText("lat : "+Utils.round(lat,3)+"\nlon : "+Utils.round(lon,3));
-			shareSystemText.setText(mPrefsFormat.printTime(currentLocation.getTime()));
+			shareTimeText.setText(mPrefsFormat.printTime(currentLocation.getTime()));
 			shareMapsUrlText.setText("http://maps.google.fr/maps?q="+lon+","+lat);
 			shareAddressText.setText(currentAddress!=null?currentAddress:getString(R.string.share_address_not_found));
 		}
@@ -188,13 +187,12 @@ public class ShareLocation extends Activity {
 		if(shareAccurencyButton.isChecked())
 			stringBuilder.append(shareAccurencyText.getText()).append("\n");
 
-		if(shareSystemButton.isChecked())
-			stringBuilder.append(shareSystemText.getText()).append("\n");
+		if(shareTimeButton.isChecked())
+			stringBuilder.append(shareTimeText.getText()).append("\n");
 
 		if(shareMapsUrlButton.isChecked())
 			stringBuilder.append(shareMapsUrlText.getText()).append("\n");
 
 		return stringBuilder;
 	}
-
 }

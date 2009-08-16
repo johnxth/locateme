@@ -94,7 +94,7 @@
 	<string name="locateme_options"><i>LocateMe</i> options</string>
 	
 	<string name="share_location">Share this location</string>
-	<string name="share_provider">Location provider :</string>
+	<string name="share_time">Last location update :</string>
 	<string name="share_address">Address :</string>
 	<string name="share_coordinates">Coordinates :</string>
 	<string name="share_maps_url">Google Maps URL :</string>
